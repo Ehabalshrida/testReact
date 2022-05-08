@@ -1,9 +1,11 @@
 import React,{memo} from 'react'
- function UseMemoChild({count}) {
+ function UseMemoChild(props) {
     console.log("Ehab")
   return (
     <div>UseMemoChild
-        {count}
+        {props.count}        
+<button onClick={()=>{props.update()}}>update</button>
+    {/* <button></button> */}
     </div>
   )
 }
